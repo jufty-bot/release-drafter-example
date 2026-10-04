@@ -13,5 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: juftin/release-drafter/autolabeler@main
+        with:
+          config-name: preset:gitmoji
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

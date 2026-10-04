@@ -15,5 +15,7 @@ permissions:
 jobs:
   draft-release:
     uses: juftin/release-drafter/.github/workflows/workflow.yml@main
+    with:
+      config-name: preset:gitmoji
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
