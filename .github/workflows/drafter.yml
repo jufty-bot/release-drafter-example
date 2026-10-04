@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  pull_request:
+  pull_request_target:
     types: [opened, reopened, synchronize]
   workflow_dispatch:
 
@@ -13,9 +13,10 @@ permissions:
   pull-requests: write
 
 jobs:
-  draft-release:
+  release-drafter:
     uses: juftin/release-drafter/.github/workflows/workflow.yml@main
     with:
       config-name: preset:gitmoji
+      check: true
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
