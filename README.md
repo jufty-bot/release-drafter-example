@@ -31,3 +31,7 @@ With zero local configuration (no `.github/release-drafter.yml`), Release Drafte
 - Categorize changes into Conventional Commits categories (Features, Bug Fixes, Documentation, etc.)
 - Calculate SemVer increments from commit messages (`feat:` -> minor bump, `fix:` -> patch bump, breaking change -> major bump)
 - Draft release notes from direct commits and pull requests
+
+## API
+
+Health check endpoint available.
