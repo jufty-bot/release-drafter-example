@@ -37,3 +37,7 @@ With zero local configuration (no `.github/release-drafter.yml`), Release Drafte
 Health check endpoint available.
 
 - Supports timeout query parameter.
+
+## Telemetry
+
+OpenTelemetry metrics supported.
